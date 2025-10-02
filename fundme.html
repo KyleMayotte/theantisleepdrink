@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti Sleep - Don't Sleep On Your Dreams</title>
+    <style>
+        /* General Body & Container Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /* Product Image */
+        .product-image {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Typography & Headings */
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+            animation: slideInUp 1s ease-out;
+        }
+
+        .subheadline {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            font-weight: 300;
+            color: #ccc;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Form & Input Fields */
+        .email-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #333;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            font-size: 1rem;
+            border-radius: 6px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #00ff66; /* Neon green focus highlight */
+        }
+
+        /* Buttons */
+        .cta-button {
+            background-color: #00ff66; /* Neon green for high energy */
+            color: #0d0d0d;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-button:hover {
+            background-color: #00e65c;
+            transform: translateY(-2px);
+        }
+
+        .secondary-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .secondary-link:hover {
+            color: #00ff66;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Mobile-specific adjustments for better spacing on very small screens */
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .product-image {
+                margin-bottom: 25px;
+            }
+
+            h1 {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="antijpeg.jpeg" alt="Anti Sleep Cold Brew Product" class="product-image">
+
+    <h1>Don't sleep on your dreams.</h1>
+    <div class="subheadline">
+        Fuel them with Anti Sleep, the cold brew built for the bold and the relentless.
+    </div>
+    
+    <form action="https://formspree.io/f/mwprbvgd" method="post" class="email-form">
+        <input type="text" id="name" name="name" placeholder="Name" class="form-input" required>
+        <input type="email" id="email" name="email" placeholder="Email Address" class="form-input" required>
+        <button type="submit" class="cta-button">Join the Movement</button>
+    </form>
+    
+    <a href="#" class="secondary-link">Support us on Kickstarter</a>
+</div>
+
+</body>
+</html>
