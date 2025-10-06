@@ -81,9 +81,10 @@
             border-color: #00ff66; /* Neon green focus highlight */
         }
 
-        /* Buttons */
+        /* --- Buttons --- */
         .cta-button {
-            background-color: #00ff66; /* Neon green for high energy */
+            /* Neon green for email CTA */
+            background-color: #00ff66; 
             color: #0d0d0d;
             border: none;
             padding: 15px 30px;
@@ -101,6 +102,38 @@
             transform: translateY(-2px);
         }
 
+        /* GoFundMe Button Style (New prominent red look) */
+        .gofundme-button {
+            /* Shared button appearance */
+            display: block; 
+            margin: 20px auto 0;
+            max-width: 400px; 
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            letter-spacing: 0.5px;
+            text-decoration: none; /* Remove underline */
+            border: none;
+        }
+
+        .gofundme-button-red {
+            /* Specific red color */
+            background-color: #e53e3e; 
+            color: #ffffff; 
+            box-shadow: 0 4px 15px rgba(229, 62, 62, 0.4);
+        }
+        
+        .gofundme-button-red:hover {
+            background-color: #c53030; 
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(197, 48, 48, 0.6);
+        }
+
+        /* Old secondary-link CSS (kept but not used on the GFM link anymore) */
         .secondary-link {
             display: inline-block;
             margin-top: 20px;
@@ -113,6 +146,7 @@
         .secondary-link:hover {
             color: #00ff66;
         }
+
 
         /* Animations */
         @keyframes fadeIn {
@@ -144,7 +178,8 @@
 <body>
 
 <div class="container">
-    <img src="relentless.png" alt="Anti Sleep Cold Brew Product" class="product-image">
+    <!-- Note: Image link 'relentless.png' is not a working image URL in this environment, but kept as provided. -->
+    <img src="antijpeg.jpeg" alt="Anti Sleep Cold Brew Product" class="product-image">
 
     <h1>Don't sleep on your dreams.</h1>
     <div class="subheadline">
@@ -157,7 +192,10 @@
         <button type="submit" class="cta-button">Join the Movement</button>
     </form>
     
-    <a href="#" class="secondary-link">Support us on Kickstarter</a>
+    <!-- FIXED LINK: The actual URL is now in href, and it has the new red button style. target="_blank" ensures it opens a new tab. -->
+    <a href="https://gofund.me/1c86af7a8" target="_blank" class="gofundme-button gofundme-button-red">
+        Support Our Mission on GoFundMe
+    </a>
 </div>
 
 </body>
